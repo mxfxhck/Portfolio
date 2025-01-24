@@ -262,7 +262,6 @@ export default function About() {
                                                         border="neutral-medium"
                                                         
                                                         radius="m"
-                                                        minWidth={image.width} height={image.height}>
                                                         <SmartImage
                                                             enlarge
                                                             radius="m"
@@ -347,7 +346,6 @@ export default function About() {
                                                         border="neutral-medium"
                                                         
                                                         radius="m"
-                                                        minWidth={image.width} height={image.height}>
                                                         <SmartImage
                                                             enlarge
                                                             radius="m"
