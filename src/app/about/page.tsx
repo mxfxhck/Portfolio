@@ -81,7 +81,7 @@ export default function About() {
                         },
                     }),
                 }}
-            </Flex>
+            />
             { about.tableOfContent.display && (
                 <Flex
                     style={{ left: '0', top: '50%', transform: 'translateY(-50%)' }}
@@ -148,7 +148,7 @@ export default function About() {
                                 alignItems="center">
                                 <Flex paddingLeft="12">
                                     <Icon
-                                        name="download"
+                                        name="calendar"
                                         onBackground="brand-weak"/>
                                 </Flex>
                                 <Flex
@@ -252,26 +252,6 @@ export default function About() {
                                                 </Text>
                                             ))}
                                         </Flex>
-                                        {experience.images.length > 0 && (
-                                            <Flex
-                                                fillWidth paddingTop="m" paddingLeft="40"
-                                                wrap>
-                                                {experience.images.map((image, index) => (
-                                                    <Flex
-                                                        key={index}
-                                                        border="neutral-medium"
-                                                        
-                                                        radius="m"
-                                                        <SmartImage
-                                                            enlarge
-                                                            radius="m"
-                                                            sizes={image.width.toString()}
-                                                            alt={image.alt}
-                                                            src={image.src}/>
-                                                    </Flex>
-                                                ))}
-                                            </Flex>
-                                        )}
                                     </Flex>
                                 ))}
                             </Flex>
@@ -336,26 +316,6 @@ export default function About() {
                                             onBackground="neutral-weak">
                                             {skill.description}
                                         </Text>
-                                        {skill.images && skill.images.length > 0 && (
-                                            <Flex
-                                                fillWidth paddingTop="m" gap="12"
-                                                wrap>
-                                                {skill.images.map((image, index) => (
-                                                    <Flex
-                                                        key={index}
-                                                        border="neutral-medium"
-                                                        
-                                                        radius="m"
-                                                        <SmartImage
-                                                            enlarge
-                                                            radius="m"
-                                                            sizes={image.width.toString()}
-                                                            alt={image.alt}
-                                                            src={image.src}/>
-                                                    </Flex>
-                                                ))}
-                                            </Flex>
-                                        )}
                                     </Flex>
                                 ))}
                             </Flex>
