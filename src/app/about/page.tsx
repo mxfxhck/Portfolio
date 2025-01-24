@@ -81,7 +81,7 @@ export default function About() {
                         },
                     }),
                 }}
-            />
+            </Flex>
             { about.tableOfContent.display && (
                 <Flex
                     style={{ left: '0', top: '50%', transform: 'translateY(-50%)' }}
